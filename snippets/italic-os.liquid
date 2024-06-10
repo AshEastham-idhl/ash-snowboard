@@ -1,0 +1,5 @@
+{% if heading contains 'o' or heading contains 'O' %}
+  {{ heading | replace: 'o', '<i>o</i>' | replace: 'O', '<i>O</i>' | replace: 'str<i>o</i>ng>', 'strong' }}
+{% else %}
+  {{ heading }}
+{% endif %}
